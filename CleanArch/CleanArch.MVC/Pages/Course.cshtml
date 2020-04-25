@@ -1,0 +1,24 @@
+﻿@page
+@model CleanArch.MVC.Pages.CourseModel;
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+<div class="container body-content">
+    <div class="row course-content">
+
+        @foreach (var course in Model.Course.Courses)
+        {
+            <div class="course-image-container">
+
+                <div class="course-image" style="background-image:url(@Html.DisplayFor(modelItem => course.ImageUrl))">
+                </div>
+                <span>@Html.DisplayFor(modelItem => course.Name)</span>
+            </div>
+        }
+
+    </div>
+
+</div>
