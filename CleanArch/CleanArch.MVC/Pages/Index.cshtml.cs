@@ -11,6 +11,7 @@ namespace CleanArch.MVC.Pages
     {
         public void OnGet()
         {
+            //Master branch test
 
         }
     }
